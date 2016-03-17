@@ -1,14 +1,19 @@
 $(document).ready(function(){
+
 	console.log("Script included!");	
-});
+	
+	alert('Hello there! Welcome to my recipe page.');
 
-$(document).ready(function () {
-     $('<input type="checkbox" value="1" />').prependTo('li');
- });
+	$('<input type="checkbox" value="1" />').prependTo('li');
 
-$(document).ready(function(){
-	$('img').click(function(){
-		$('img').toggle();
+	$('button').click(function(){
+		$('img').toggle(1000);
 	});
+
+	$('#footer').draggable();
+
 });
+
+
+
 
